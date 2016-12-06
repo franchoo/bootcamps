@@ -1,0 +1,83 @@
+<!-- calculator -->
+<div class="container">
+<div class="row">
+  <div class="col-xs-12 ">
+    <input type="text" value="{{expression}}" class="result">
+  </div>
+
+
+  <div class="col-xs-12">
+
+         <!-- First Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="7" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="8" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="9" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-success'" [display]="'+'" (onReply)="update($event)"></app-button>
+      </div>
+    </div>
+
+      <!-- Second Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="4" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="5" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="6" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-success'" [display]="'-'" (onReply)="update($event)"></app-button>
+      </div>
+    </div>
+
+      <!-- Third Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="3" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="2" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="1" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-success'" [display]="'*'" (onReply)="update($event)"></app-button>
+      </div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="0" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-primary'" [display]="'.'" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-warning'" [display]="'='" (onReply)="update($event)"></app-button>
+      </div>
+      <div class="col-xs-3">
+        <app-button [class]="'btn-success'" [display]="'/'" (onReply)="update($event)"></app-button>
+      </div>
+    </div>
+
+    <!-- Fifth Row -->
+    <div class="row">
+      <div class="col-xs-12">
+        <app-button [class]="'btn-danger'" [display]="'Wipe me!'" (onReply)="ngOnInit()"></app-button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
