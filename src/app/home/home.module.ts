@@ -1,12 +1,13 @@
-import { XPipePipe } from './../x-pipe.pipe';
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
-  declarations: [HomeComponent, XPipePipe]
+  declarations: [HomeComponent]
 })
 export class HomeModule { }

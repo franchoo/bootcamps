@@ -1,9 +1,10 @@
+import { XPipePipe } from './x-pipe.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewsComponent } from './news.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [NewsComponent]
+  declarations: [XPipePipe],
+  exports: [XPipePipe]
 })
-export class NewsModule { }
+export class SharedModule { }
